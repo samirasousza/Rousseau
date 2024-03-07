@@ -1,0 +1,46 @@
+.card {
+    /*flex-direction: column;*/
+    /* justify-content: space-between; */
+    width: 264px;
+    height: 161px;
+    margin: 248px;
+    background: #F0F0F0;
+    border-left: 12px solid #1960E9;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+    padding: 10px 32px;
+    cursor: pointer;
+}
+
+.card .card-setor h2{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card-tags {
+    
+}
+
+.card-tags .card-tag{
+    display: inline-block;
+}
+
+.card-tag {
+    width: 79px;
+    height: 97px;
+    background: white;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.card-tag h1 {
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.card-tag h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
