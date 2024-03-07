@@ -1,3 +1,14 @@
+.login {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: orange;
+    /* background: url('./assets/background.png') no-repeat; */
+    background-size: cover;
+    background-position: center;
+}
 
 .wrapper {
     width: 385px;
