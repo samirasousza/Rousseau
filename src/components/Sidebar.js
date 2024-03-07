@@ -3,6 +3,7 @@ import './Sidebar.css';
 import Dropdown from './Dropdown';
 import { NavLink } from 'react-router-dom';
 
+
 const Sidebar = () => {
     
   const setoresOptions = [
@@ -26,7 +27,7 @@ const Sidebar = () => {
           </div>
 
           <div className='User-img'>
-            <img href='/assets/teste.png' alt='User-img'/>
+            <img href='../assets/teste.png' alt='User-img'/>
           </div>
 
           <div className='User-details'>

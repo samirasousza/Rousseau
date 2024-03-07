@@ -1,9 +1,52 @@
-.Container .cards {
-    
-    padding: 81px;
+.Home {
+    width: 100%;
+    height: 100%;
+    margin: 28px 0 0 321px;
+}
+
+.Home .path {
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #8A8B82;
+}
+
+.Home .tittle {
+    margin-top: 32px;
+    margin-left: -33px;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #000;
+}
+
+.Home .Container {
+    margin: 95px 95px 40px 0;
+    margin: 0;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.setor {
+    align-items: center;
+}
+
+.Container {
+    /* margin: 81px 0 0 241px; */
+}
+
+.Container .rooms {
+    margin-top: 300px;
+    display: flex;
+    position: absolute;
+    padding: 28px 16px 16px 0;
+    gap: 16px;
 }
 
 
-h2 {
+h1 {
     color: black;
 }

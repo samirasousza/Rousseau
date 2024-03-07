@@ -3,44 +3,84 @@
     /* justify-content: space-between; */
     width: 264px;
     height: 161px;
-    margin: 248px;
+    /* margin: 248px; */
     background: #F0F0F0;
     border-left: 12px solid #1960E9;
     color: black;
     font-family: 'Open Sans', sans-serif;
     border-radius: 8px;
-    padding: 10px 32px;
+    
     cursor: pointer;
 }
 
-.card .card-setor h2{
+.card-setor {
     margin: 0;
+    position:relative;
+    padding: 10px 45px 20px 20px;
+}
+
+.card-setor h2{
+    margin: 7px 0;
     font-size: 16px;
     font-weight: 700;
 }
 
+.card-setor .icon-eye {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    width: 16px;
+    height: 16px;
+}
+
 .card-tags {
+    margin: 15px 20px 15px 0;
+    padding: 0 20px 20px 0;
     
 }
 
 .card-tags .card-tag{
     display: inline-block;
+    position: absolute;
 }
 
-.card-tag {
-    width: 79px;
-    height: 97px;
+.card-tags .card-tag {
+    width: 97px;
+    height: 79px;
     background: white;
     border-radius: 6px;
-    padding: 15px;
+}
+
+.card-tag:nth-child(1) {
+    float: left;
+}
+
+.card-tag:nth-child(2) {
+    margin-left: 111px;
 }
 
 .card-tag h1 {
+    position: absolute;
     font-size: 8px;
     font-weight: 700;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.card-tag h3 {
+.card-tag p {
+    position: absolute;
     font-size: 24px;
     font-weight: 700;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-tag .icon-info {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
 }

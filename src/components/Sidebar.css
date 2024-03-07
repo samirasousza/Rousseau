@@ -1,5 +1,6 @@
+
 * {
-  margin: 0;
+  float: left;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -66,10 +67,10 @@
 .navegacao {
     cursor: pointer;
     padding: 10px;
-    &:hover {
-        background-color: #E59538;
-    }
     color: white;
     background-color: #1E1F28;
     text-decoration: none;
+    &:hover {
+        background-color: #E59538;
+    };
 }

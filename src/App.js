@@ -16,8 +16,8 @@ function App() {
       <div className='App'>
         {/* <h1>React Router</h1> */}
         <Container>
-          <Login />
-          {/* <Home name='001- Administração' temp='25' umid='40' /> */}
+          {/* <Login /> */}
+          <Home setor='Callidus' sala='001- Administração' temp='25' umid='40' />
         </Container>
         <Outlet />
         {/* <p>Footer</p> */}
