@@ -14,12 +14,7 @@ function App() {
   return (
       <div className='App'>
         <Sidebar />
-        <h1>React Router</h1>
-        <Container>
-          <Home name='001- Administração' temp='25' umid='40' />
-        </Container>
         <Outlet />
-        <p>Footer</p>
       </div>
   );
 }

@@ -7,6 +7,10 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Contact from './pages/Contact';
 import Login from './pages/Login/Login'
+import Alertas from './pages/Alertas/Alertas';
+import Salas from './pages/Salas/Salas';
+import Relatorios from './pages/Relatorios/Relatorios';
+import Usuarios from './pages/Usuarios/Usuarios';
 
 
 // const router = createBrowserRouter([
@@ -30,13 +34,27 @@ const router = createBrowserRouter([
       //  element:<Login />,
       //  path:'/login'
       // },
+
+      
       {
-        element:<Home />,
-        path:'/home'
+        element:<Home name='001- Administração' temp='25' umid='40'/>,
+        path:'home'
       },
       {
-        element:<Contact />,
-        path:'/contact'
+        element:<Alertas />,
+        path:'alertas'
+      },
+      {
+        element:<Salas />,
+        path:'salas'
+      },
+      {
+        element:<Relatorios />,
+        path:'relatorios'
+      },
+      {
+        element:<Usuarios />,
+        path:'usuarios'
       },
     ]
   },
