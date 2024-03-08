@@ -30,21 +30,15 @@
 }
 
 .card-nav {
-    width: 90px;
-    height: 16px;
-    /* margin: 15px 20px 15px 0; */
-    /* padding: 0 20px 20px 0; */
-    /* display: inline-block; */
-    position: absolute;
+    margin: 25px 20px 15px 0;
+    padding: 0 20px 20px 0;
     background: #D9D9D9;
     border-radius: 6px;
 }
 
 .card-nav h1 {
-    position: absolute;
     font-size: 8px;
     font-weight: 400;
-
     left: 20px;
 }
 
