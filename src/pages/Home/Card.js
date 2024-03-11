@@ -6,7 +6,7 @@ import { AiFillInfoCircle } from "react-icons/ai";
 function Card({item}) {
   return (
         <div className='card-setor'>
-            <h2>{item.id} - {item.sala}</h2>
+            <h2 className='card-setor-tittle'>{item.id} - {item.sala}</h2>
             <BsEyeFill className='icon-eye' />
             <div className='card-tags'>
                 <div className='card-tag'>
@@ -26,7 +26,6 @@ function Card({item}) {
                 </div>
             </div>
         </div>
-
   )
 }
 

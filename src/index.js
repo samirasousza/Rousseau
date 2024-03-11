@@ -5,8 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import Contact from './pages/Contact';
 import Login from './pages/Login/Login'
+import Room from './pages/Room/Room';
 
 
 // const router = createBrowserRouter([
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
         path:'/home'
       },
       {
-        element:<Contact />,
-        path:'/contact'
+        element:<Room />,
+        path:'/room'
       },
     ]
   },

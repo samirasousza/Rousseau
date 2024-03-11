@@ -19,28 +19,26 @@ const Sidebar = () => {
   ];
     
   return (
-    <div className='Container'>
-      <div className='Sidebar'>
-        <div className='Head'>
-          <div className='Logo'>
-            <img src='../assets/logoMenu.png' alt='Logo' title='Luminus'/>
-          </div>
-
-          <div className='User-img'>
-            <img href='../assets/teste.png' alt='User-img'/>
-          </div>
-
-          <div className='User-details'>
-            <p className='Name'>João Machado</p>
-            <p className='Tittle'>Administrador</p>
-          </div>
-
-          <h2>Menu</h2>
-          <Dropdown label="Setores" options={setoresOptions} highlightColor="#D76A08" />
-          <Dropdown label="Salas" options={salasOptions} highlightColor="#D76A08" />
-          <p><NavLink to="/" className="navegacao" >HOME</NavLink></p>
-          <p><NavLink to="/contact" className="navegacao" >CONTATOS</NavLink></p>
+    <div className='Sidebar'>
+      <div className='Head'>
+        <div className='Logo'>
+          <img src='../assets/logoMenu.png' alt='Logo' title='Luminus'/>
         </div>
+
+        <div className='User-img'>
+          <img href='../assets/teste.png' alt='User-img'/>
+        </div>
+
+        <div className='User-details'>
+          <p className='Name'>João Machado</p>
+          <p className='Tittle'>Administrador</p>
+        </div>
+
+        <h2>Menu</h2>
+        <Dropdown label="Setores" options={setoresOptions} highlightColor="#D76A08" />
+        <Dropdown label="Salas" options={salasOptions} highlightColor="#D76A08" />
+        <p><NavLink to="/" className="navegacao" >HOME</NavLink></p>
+        <p><NavLink to="/contact" className="navegacao" >CONTATOS</NavLink></p>
       </div>
     </div>
   );
