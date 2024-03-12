@@ -7,31 +7,31 @@ import { GoAlertFill } from "react-icons/go";
 export const SidebarAdm = [
     {
         name: "Home", 
-        url: 'home',
+        url: '/home',
         icon: <IoHome/>
     }, 
 
     {
         name: 'Alertas', 
-        url: 'alertas',
+        url: '/alertas',
         icon: <GoAlertFill />
     }, 
 
     {
         name: 'Usuários', 
-        url: 'usuarios',
+        url: '/usuarios',
         icon: <IoPerson />
     }, 
 
     {
         name: 'Salas', 
-        url: 'salas',
+        url: '/room',
         icon: <MdOutlineRoomPreferences />
     }, 
 
     {
         name: 'Relatórios', 
-        url: 'relatorios',
+        url: '/relatorios',
         icon: <IoDocumentTextSharp />
     },    
 ]

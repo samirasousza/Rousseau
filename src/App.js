@@ -8,6 +8,7 @@ import { Outlet } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Room from './pages/Room/Room';
+import Sidebar from './components/Sidebar';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           {/* { <Home setor='Callidus' /> } */}
           {/* { <Room setor='Callidus' sala='002 - Almoxarifado' /> } */}
           {/* <Home setor='Callidus' sala='001- Administração' temp='25' umid='40' /> */}
+        <Sidebar />
         <Outlet />
         {/* <p>Footer</p> */}
       </div>

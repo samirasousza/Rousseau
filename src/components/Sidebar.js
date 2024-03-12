@@ -44,9 +44,8 @@ const Sidebar = ({userItens}) => {
             <p className='Tittle'>Administrador</p>
           </div>
           <div class="navegacao"></div>
-          <ul class="menu"></ul>
-          <ul class ="home">
-          </ul>
+            <ul class="menu"></ul>
+            <ul class ="home"></ul>
           <div>
             {SidebarAdm.map((item, i)=>{
               return(

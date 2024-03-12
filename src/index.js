@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       },
       {
         element:<Alertas />,
-        path:'alertas'
+        path:'/alertas'
       },
       {
         element:<Room setor='Callidus' sala='002 - Almoxarifado' />,
@@ -48,11 +48,11 @@ const router = createBrowserRouter([
       },
       {
         element:<Relatorios />,
-        path: 'relatorios'
+        path: '/relatorios'
       },
       {
         element:<Usuarios />,
-        path: 'usuarios'
+        path: '/usuarios'
       },
     ]
   },
