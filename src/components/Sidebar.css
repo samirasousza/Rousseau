@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
 
 .Sidebar {
   width: 248px;
@@ -5,10 +11,10 @@
   top: 0;
   left: 0;
   position: fixed;
-  overflow-y: auto;
+  display: flex;
   flex-direction: column;
   /* min-height: 100vh; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: 'Open Sans', sans-serif;
   background-color: #1E1F28;
   color: white;
@@ -33,36 +39,70 @@
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
+  position: relative;
+  top: calc(58px);
 }
 
 .User-img img {
-  width: 100%;
-  object-fit: cover;
+  width: 50%;
+  object-fit: contain;
   background-color: #E59538;
 }
 
-.User-details {
-}
-
 .User-details .Name {
+  font-family: 'Open Sans', sans-serif;;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
+  position: relative;
+  top: 20px; left:13px;
 }
 
-.User-details .Tittle {
+.User-details .Tittle, .menu .tittle {
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
+  position: relative;
+  top: 25px; left:13px;
+  margin-bottom: 100px;
 }
 
-.navegacao {
-    cursor: pointer;
-    padding: 10px;
+
+.nav{
     color: white;
-    background-color: #1E1F28;
     text-decoration: none;
-    &:hover {
-        background-color: #E59538;
-    };
+    margin-bottom: 15px;
+    border-radius: 3px;
+    padding: 8px 10px;
+}
+
+.nav:hover{
+    cursor: pointer;
+    background-color: #E59538;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home {
+  color: #fff;
+  position: relative;
+  top: 0px; right:0px;
+}
+
+.icon-text{
+  padding-left: 8px;
+  font-size: 12px;
+}
+
+.nav-link-icon{
+  all: unset;
+  display: grid;
+  place-items: center;
+  size: 15px;
 }

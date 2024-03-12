@@ -1,20 +1,17 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
- 
+  /* display: flex;
+  justify-content: center; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Open Sans', sans-serif;
 }
 
-*{
+/* *{
   margin: 0;
-}
+} */

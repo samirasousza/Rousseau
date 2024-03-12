@@ -74,12 +74,12 @@ function Room(props) {
                     <h1>Quantidade de beacons:</h1>
                     <p>2</p>
                 </div>
-                <div className='graphic-box'>
-                    <h1 className='graphic-tittle'>Gráficos</h1>
-                    <div className='filter'>
-                        <h1 className='filter-tittle'>Filtro</h1>
-                        <h2>input</h2>
-                    </div>
+            </div>
+            <div className='graphic-box'>
+                <h1 className='graphic-tittle'>Gráficos</h1>
+                <div className='filter'>
+                    <h1 className='filter-tittle'>Filtro</h1>
+                    <h2>input</h2>
                 </div>
             </div>
         </div>

@@ -7,6 +7,10 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login'
 import Room from './pages/Room/Room';
+import Alertas from './pages/Alertas/Alertas';
+import Relatorios from './pages/Relatorios/Relatorios';
+import Usuarios from './pages/Usuarios/Usuarios';
+
 
 
 // const router = createBrowserRouter([
@@ -31,12 +35,24 @@ const router = createBrowserRouter([
       //  path:'/login'
       // },
       {
-        element:<Home />,
+        element:<Home setor='Callidus'/>,
         path:'/home'
       },
       {
-        element:<Room />,
+        element:<Alertas />,
+        path:'alertas'
+      },
+      {
+        element:<Room setor='Callidus' sala='002 - Almoxarifado' />,
         path:'/room'
+      },
+      {
+        element:<Relatorios />,
+        path: 'relatorios'
+      },
+      {
+        element:<Usuarios />,
+        path: 'usuarios'
       },
     ]
   },
