@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-}
 
 .Sidebar {
   width: 248px;
@@ -13,8 +7,10 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  /* min-height: 100vh; */
-  /* box-sizing: border-box; */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   background-color: #1E1F28;
   color: white;
@@ -49,6 +45,11 @@
   background-color: #E59538;
 }
 
+.User-details {
+  /* display: flex; */
+
+}
+
 .User-details .Name {
   font-family: 'Open Sans', sans-serif;;
   font-size: 14px;
@@ -66,7 +67,6 @@
   top: 25px; left:13px;
   margin-bottom: 100px;
 }
-
 
 .nav{
     color: white;
