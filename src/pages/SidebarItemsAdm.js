@@ -25,7 +25,7 @@ export const SidebarAdm = [
 
     {
         name: 'Salas', 
-        url: '/room',
+        url: '/salas',
         icon: <MdOutlineRoomPreferences />
     }, 
 

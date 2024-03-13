@@ -19,7 +19,6 @@ function App() {
           {/* { <Home setor='Callidus' /> } */}
           {/* { <Room setor='Callidus' sala='002 - Almoxarifado' /> } */}
           {/* <Home setor='Callidus' sala='001- Administração' temp='25' umid='40' /> */}
-        <Sidebar />
         <Outlet />
         {/* <p>Footer</p> */}
       </div>

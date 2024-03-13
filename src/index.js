@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         element:<Room setor='Callidus' sala='002 - Almoxarifado' />,
-        path:'/room'
+        path:'/salas'
       },
       {
         element:<Relatorios />,
