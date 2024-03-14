@@ -1,4 +1,4 @@
-.card-alert {
+.card-alert-home {
     width: 184px;
     height: 62px;
     margin: 0;
@@ -12,7 +12,7 @@
     cursor: pointer;
 }
 
-.card-alert .card-alert-tittle{
+.card-alert-tittle-home{
     margin: 1px;
     font-size: 13px;
     font-weight: 600;
@@ -22,12 +22,12 @@
     text-overflow: ellipsis;
 }
 
-.card-alert-tittle:hover {
+.card-alert-tittle-home:hover {
     overflow: visible; 
     white-space: normal; 
 } 
 
-.card-alert .icon-eye {
+.card-alert-home .icon-eye {
     position: absolute;
     top: 12px;
     right: 17px;

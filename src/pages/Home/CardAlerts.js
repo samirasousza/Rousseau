@@ -5,8 +5,8 @@ import { BiSolidNavigation } from "react-icons/bi";
 
 function CardAlerts({item}) {
   return (
-    <div className='card-alert'>
-        <h2 className='card-alert-tittle'>{item.id} - {item.sala}</h2>
+    <div className='card-alert-home'>
+        <h2 className='card-alert-tittle-home'>{item.id} - {item.sala}</h2>
         <BsEyeFill className='icon-eye' />
         <div className='card-nav'>
             <BiSolidNavigation className='icon-nav'/>                        
