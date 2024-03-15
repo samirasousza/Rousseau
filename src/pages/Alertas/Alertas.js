@@ -1,9 +1,12 @@
+import styles from "./Alertas.css"
 import React from 'react'
-
-function Alertas() {
+function Alertas ({children}) {
   return (
-    <div>Alertas</div>
-  )
+    <section className={styles.alertas}>
+      {children}
+      Alertas
+    </section>
+  );
 }
 
-export default Alertas
+export default Alertas;

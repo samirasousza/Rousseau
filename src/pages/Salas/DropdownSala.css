@@ -1,0 +1,29 @@
+.Dropdown {
+    position: relative;
+    display: inline-block;
+    color: black;
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+    padding: 10px;
+    &:hover {
+        background-color: #E59538;
+    }
+    background-color: #1E1F28;
+  }
+  
+  .dropdown-options {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #24273A;
+  }
+  
+  .dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: #383a4a;
+    }
+  }
