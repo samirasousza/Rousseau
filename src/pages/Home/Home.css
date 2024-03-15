@@ -115,7 +115,8 @@
 
 .alerts-cards {
     display: grid;
-    
+    width: 240px;
+    height: 448px;
     flex-direction: center;
     align-items: center;
     gap: 16px;

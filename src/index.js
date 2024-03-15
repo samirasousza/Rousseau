@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       //  path:'/login'
       // },
       {
-        element:<Home setor='Callidus'/>,
+        element:<Home />,
         path:'/home'
       },
       {

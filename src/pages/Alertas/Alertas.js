@@ -1,11 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Sidebar from '../../components/Sidebar';
 import './Alertas.css';
 import Card from './AlertasCard';
 import AlertasCard from './AlertasCard';
 import Modal from './Modal';
+import { apiConnection } from '../../config/httpConnection';
 
 function Alertas() {
+
+  // Funções do Banco de dados
+
+  const [alertas, setAlertas] = useState([]);
+
+  useEffect(() => {
+    getAlertas();
+  }, []);
+
+  async function getAlertas() {
+    const response = await apiConnection.get(`/get-alertas`);
+    console.log(response);
+    setAlertas(response.data);
+  };
 
   // Informações alertas
 
@@ -93,25 +108,25 @@ function Alertas() {
                   <form>
                     <h2>Temperatura</h2>
                     <label>
-                      <input type='checkbox' name='option1' checked/>Acima
+                      <input type='checkbox' name='option1' />Acima
                       <input type='checkbox' name='option2' />Abaixo
                     </label>
 
                     <h2>Umidade</h2>
                     <label>
-                      <input type='checkbox' name='option1' checked/>Acima
+                      <input type='checkbox' name='option1' />Acima
                       <input type='checkbox' name='option2' />Abaixo
                     </label>
 
                     <h2>Setor</h2>
                     <label>
-                      <input type='checkbox' name='salax' checked/>Salax
+                      <input type='checkbox' name='salax' />Salax
                       <input type='checkbox' name='salay' />Salay
                     </label>
 
                     <h2>Nível de urgência</h2>
                     <label>
-                      <input type='checkbox' name='alto' checked/>Alto
+                      <input type='checkbox' name='alto' />Alto
                       <input type='checkbox' name='medio' />Médio
                       <input type='checkbox' name='baixo' />Baixo
                     </label>
@@ -134,7 +149,7 @@ function Alertas() {
         <span className='data-atual'></span>
 
         <div className='alerta-cards'>
-          {alerts.map((item) => (<AlertasCard item={item}/>))}
+          {alertas.map(alerta => (<AlertasCard alerta={alerta} key={alerta.ID_ALERTA} />))}
         </div>
         
       </div>

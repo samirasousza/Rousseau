@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Card from './Card'
 import './Home.css'
 import Sidebar from '../../components/Sidebar'
 import { TbTriangleInvertedFilled } from "react-icons/tb"; 
 import { BiSolidError } from "react-icons/bi";
 import CardAlerts from './CardAlerts';
+import { apiConnection } from '../../config/httpConnection';
 
 
-const Home = (props) => {
+const Home = () => {
 
   const room1 = {
     id: '001',
@@ -54,8 +55,46 @@ const Home = (props) => {
       local: 'Prédio 3'
     }
 
+    // id_sala
+    // id_setor
+    // nome_sala
+    // desc_sala
+    // temp_max
+    // temp_min
+    // umid_max
+    // umid_min
+    // status_sala
+
   const room = [room1, room2, room3, room4, room5]
   // const [room, setRoom] = useState([])
+
+  const [salas, setRooms] = useState([]);
+  const [setores, setSetores] = useState([]);
+  const [alertas, setAlertas] = useState([]);
+
+  useEffect(() => {
+    getSalas();
+    getSetores();
+    getAlertas();
+  }, []);
+
+  async function getSalas() {
+    const response = await apiConnection.get(`/get-salas`);
+    console.log(response);
+    setRooms(response.data);
+  };
+
+  async function getSetores() {
+    const resposta = await apiConnection.get('/get-setores');
+    console.log(resposta);
+    setSetores(resposta.data)
+  };
+
+  async function getAlertas() {
+    const response = await apiConnection.get(`/get-alertas`);
+    console.log(response);
+    setAlertas(response.data);
+  };
 
   return (
     <>
@@ -67,14 +106,13 @@ const Home = (props) => {
         <div className='Container'>
             <div className='setor'>
               <TbTriangleInvertedFilled className='setor-icon-left' />
-              <h1 className='setor-tittle'>Setor {props.setor}</h1>
+              <h1 className='setor-tittle'>Setor callidusprops</h1>
               <TbTriangleInvertedFilled className='setor-icon-right' />
             </div>
             <div className='Container-room-alerts'>
               <div className='home-rooms'>
-                  {room.map((item) => (<Card item={item}/>))}
-                  {/* <Card sala={props.sala} temp={props.temp} umid={props.umid} /> */}
-                  {/* <Card sala={props.sala} temp={props.temp} umid={props.umid} /> */}
+                  {/* {room.map((item) => (<Card item={item}/>))} */}
+                  {salas.map(item => (<Card item={item} key={item.ID_SALA} />))}
               </div>
               <div className='home-alerts'>
                 <div className='alerts-top'>
@@ -82,7 +120,8 @@ const Home = (props) => {
                   <h1 className='alerts-tittle'>Alertas</h1>
                 </div>
                 <div className='alerts-cards'>
-                  {room.map((item) => (<CardAlerts item={item}/>))}
+                  {/* TEM QUE PEGAR O ID_SALA DO ALERTA E FAZER UMA BUSCAR NAS SALAS PRA MOSTAR AQUI */}
+                  {salas.map(item => (<CardAlerts item={item} key={item.ID_SALA} />))}
                 </div>
               </div>
             </div>
