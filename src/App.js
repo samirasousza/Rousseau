@@ -9,17 +9,19 @@ import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Room from './pages/Room/Room';
 import Sidebar from './components/Sidebar';
+import Cadastro from './pages/Cadastro/Cadastro';
 
 function App() {
 
   return (
       <div className='App'>
         {/* <h1>React Router</h1> */}
-          { <Login /> }
+          {/* <Login /> */}
+          { <Cadastro /> }
           {/* { <Home setor='Callidus' /> } */}
           {/* { <Room setor='Callidus' sala='002 - Almoxarifado' /> } */}
           {/* <Home setor='Callidus' sala='001- Administração' temp='25' umid='40' /> */}
-          { /* <Outlet /> */ }
+          {/* <Outlet /> */}
           {/* <p>Footer</p> */}
       </div>
   );

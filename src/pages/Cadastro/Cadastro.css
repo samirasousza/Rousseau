@@ -1,0 +1,132 @@
+.login {
+    margin: 0;
+    display:flex;
+    
+    align-items: center;
+    min-height: 100vh;
+    background-color: orange;
+    /* background: url('./assets/background.png') no-repeat; */
+    background-size: cover;
+    
+}
+
+.wrapper {
+    justify-content: center;
+    width: 386px;
+    height: 498px;
+    margin-top: 53px;
+    margin-left: 447px;
+    background: #ffffff;
+
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 24px;
+    padding: 30px, 40px;
+}
+
+.wrapper h1 {
+    margin-top: 54px;
+    margin-left: 53px;
+    font-weight: 700;
+    font-size: 24px;
+    color:rgba(0, 0, 0, 1);
+    width: 119px;
+    height: 23px;
+    top: 85px;
+    left: 500px;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 54px 53px;
+    
+}
+
+.input-box  p{
+    font-weight: 400;
+    font-size: 14px;
+    color:rgba(0, 0, 0, 1)
+}
+
+.input-box input {
+    box-sizing: border-box;
+    width: 280px;
+    height: 28px;
+    background: #f0f0f0;
+    border: none;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 100%;
+    left: 280px;
+    transform: translateY(-15%);
+    width: 15px;
+    height: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #F0F0F0;
+    margin-right: 4px;
+}
+
+.remember-forgot a {
+    color: black;
+    text-decoration: none;
+}
+
+.remember-forgot a::hover {
+    text-decoration: underline;
+}
+
+.wrapper button {
+    width: 80px;
+    height: 32px;
+    margin-left: 300px;
+    background: rgb(28, 91, 193);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
+
+.wrapper .register-link {
+    width: 184px;
+    height: 25px;
+    top: 559px;
+    left: 548px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.register-link p a::hover {
+    text-decoration: underline;
+}
