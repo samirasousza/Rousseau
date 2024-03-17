@@ -15,12 +15,12 @@ function App() {
   return (
       <div className='App'>
         {/* <h1>React Router</h1> */}
-          {/* <Login /> */}
+          { <Login /> }
           {/* { <Home setor='Callidus' /> } */}
           {/* { <Room setor='Callidus' sala='002 - Almoxarifado' /> } */}
           {/* <Home setor='Callidus' sala='001- Administração' temp='25' umid='40' /> */}
-        <Outlet />
-        {/* <p>Footer</p> */}
+          { /* <Outlet /> */ }
+          {/* <p>Footer</p> */}
       </div>
   );
 }
