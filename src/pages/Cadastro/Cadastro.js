@@ -3,7 +3,7 @@ import './Cadastro.css';
 import { BsArrowLeft, BsEyeFill } from "react-icons/bs";
 import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../../components/UseAuth';
-import { FaArrowLeft } from 'react-icons/fa6';
+import './Cadastro.css';
 //import { BsEyeSlash } from "react-icons/bs"; <BsEyeSlash />
  
 export const Cadastro = () => {
@@ -83,7 +83,6 @@ export const Cadastro = () => {
                     <Link to="/" className='cad-register-text-link' >&nbsp;Fazer Login</Link>
                 </p>
             </div>
-
         </div>
     );
 };
