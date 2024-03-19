@@ -6,9 +6,14 @@ import { TbTriangleInvertedFilled } from "react-icons/tb";
 import { BiSolidError } from "react-icons/bi";
 import CardAlerts from './CardAlerts';
 import { apiConnection } from '../../config/httpConnection';
+import useAuth from '../../components/UseAuth';
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
+
+  const { signout } = useAuth();
+  const navigate = useNavigate();
 
   const room1 = {
     id: '001',

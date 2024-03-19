@@ -10,32 +10,35 @@ import Room from './pages/Room/Room';
 import Alertas from './pages/Alertas/Alertas';
 import Relatorios from './pages/Relatorios/Relatorios';
 import Usuarios from './pages/Usuarios/Usuarios';
+import useAuth from './components/UseAuth';
+import Cadastro from './pages/Cadastro/Cadastro';
+import Redefinir from './pages/Redefinir/Redefinir';
 
+const Private = ({ Item }) => {
+  const { signed } = useAuth();
 
-
-// const router = createBrowserRouter([
-//   {
-//     element:<Home/>,
-//     path:'/'
-//   },
-//   {
-//     element:<Contact/>,
-//     path:'/contact'
-//   }
-
-// ])
+  return signed > 0 ? <Item /> : <Login />;
+};
 
 const router = createBrowserRouter([
   {
     element:<App/>,
     path:'/',
     children: [
-      //  {
-      //  element:<Login />,
-      //  path:'/login'
-      // },
       {
-        element:<Home />,
+        element:<Login />,
+        path:''
+      },
+      {
+        element:<Cadastro />,
+        path:'/cadastro'
+      },
+      {
+        element:<Redefinir />,
+        path:'/redefinir'
+      },
+      {
+        element:<Private Item={Home} />,
         path:'/home'
       },
       {
