@@ -10,8 +10,8 @@
     color: black;
     font-family: 'Open Sans', sans-serif;
     border-radius: 8px;
-    cursor: pointer;
     padding: 15px 0 0 32px;
+    cursor: pointer;
 }
 
 .card-setor .card-setor-tittle{

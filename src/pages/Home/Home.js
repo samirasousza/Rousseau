@@ -7,7 +7,7 @@ import { BiSolidError } from "react-icons/bi";
 import CardAlerts from './CardAlerts';
 import { apiConnection } from '../../config/httpConnection';
 import useAuth from '../../components/UseAuth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
@@ -84,7 +84,7 @@ const Home = () => {
   }, []);
 
   async function getSalas() {
-    const response = await apiConnection.get(`/get-salas`);
+    const response = await apiConnection.get(`/get-salas/all`);
     console.log(response);
     setRooms(response.data);
   };
@@ -96,7 +96,7 @@ const Home = () => {
   };
 
   async function getAlertas() {
-    const response = await apiConnection.get(`/get-alertas`);
+    const response = await apiConnection.get(`/get-alertas/all/all`);
     console.log(response);
     setAlertas(response.data);
   };
@@ -117,7 +117,7 @@ const Home = () => {
             <div className='Container-room-alerts'>
               <div className='home-rooms'>
                   {/* {room.map((item) => (<Card item={item}/>))} */}
-                  {salas.map(item => (<Card item={item} key={item.ID_SALA} />))}
+                  <Link to='/sala'>{salas.map(item => (<Card item={item} key={item.ID_SALA} />))}</Link>
               </div>
               <div className='home-alerts'>
                 <div className='alerts-top'>

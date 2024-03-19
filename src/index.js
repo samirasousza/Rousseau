@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -13,6 +13,8 @@ import Usuarios from './pages/Usuarios/Usuarios';
 import useAuth from './components/UseAuth';
 import Cadastro from './pages/Cadastro/Cadastro';
 import Redefinir from './pages/Redefinir/Redefinir';
+import Salas from './pages/Salas/Salas';
+import { apiConnection } from './config/httpConnection';
 
 const Private = ({ Item }) => {
   const { signed } = useAuth();
@@ -38,7 +40,8 @@ const router = createBrowserRouter([
         path:'/redefinir'
       },
       {
-        element:<Private Item={Home} />,
+        // element:<Private Item={Home} />,
+        element:<Home />,
         path:'/home'
       },
       {
@@ -46,8 +49,13 @@ const router = createBrowserRouter([
         path:'/alertas'
       },
       {
+        // element: room.map(item => (<Room item={item} key={item.ID_SALA} />)),
         element:<Room setor='Callidus' sala='002 - Almoxarifado' />,
-        path:'/salas'
+        path:'/sala'
+      },
+      {
+        element:<Salas />,
+        path:`/salas`
       },
       {
         element:<Relatorios />,

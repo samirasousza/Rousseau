@@ -6,7 +6,7 @@ import { MdOutlineRoomPreferences } from 'react-icons/md';
 import { IoWater } from 'react-icons/io5';
 import { FaTemperatureFull } from "react-icons/fa6";
 
-function AlertasCard({alerta}) {
+function AlertasCard({item}) {
 
   // const tittleAlerta = (tempAtual, tempMax, umidAtual, umidMax) => {
   //   const nivel = parseInt(numNivel, 10);
@@ -37,7 +37,7 @@ function AlertasCard({alerta}) {
       <div className='card-alert-top'>
         <h1 className='card-alert-tittle'>item.alerta</h1>
         <div className='card-alert-nivel'>
-          <h1 className='nivel-text'>nível {nivelAlerta(alerta.NIVEL)}</h1>
+          <h1 className='nivel-text'>nível {nivelAlerta(item.NIVEL)}</h1>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ function AlertasCard({alerta}) {
         <div className='cards-alert-info'>
           <div className='card-alert-info'>
               <MdOutlineRoomPreferences className='card-alert-icon'/>     
-              <span className='card-alert-text'>{alerta.IS_SALA} - {alerta.NOME_SALA}</span>
+              <span className='card-alert-text'>{item.IS_SALA} - {item.NOME_SALA}</span>
           </div>
 
           <div className='card-alert-info'>
@@ -56,18 +56,18 @@ function AlertasCard({alerta}) {
 
           <div className='card-alert-info'>
               <IoWater className='card-alert-icon'/>     
-              <span className='card-alert-text'>Umidade: {alerta.UMID_MAX}%</span>
+              <span className='card-alert-text'>Umidade: {item.UMID_MAX}%</span>
           </div>
 
           <div className='card-alert-info'>
               <FaTemperatureFull className='card-alert-icon'/>     
-              <span className='card-alert-text'>Temperatura: {alerta.TEMP_MAX}°C</span>
+              <span className='card-alert-text'>Temperatura: {item.TEMP_MAX}°C</span>
           </div>
         </div>
 
         <div className='card-alert-tempo'>
-          <span className='alert-data'>{alerta.DATA_CRIACAO}</span>
-          <span className='alert-hora'>{alerta.hora}</span>
+          <span className='alert-data'>{item.DATA_CRIACAO}</span>
+          <span className='alert-hora'>{item.hora}</span>
         </div>
 
       </div>

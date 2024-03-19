@@ -1,0 +1,186 @@
+.relatorios {
+    width: 70%;
+    height: 80%;  
+    margin: 28px 125px 21px 360px;
+    display: block;
+    position: fixed;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.relatorios-page {
+
+}
+
+.relatorios-path {
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #8A8B82;
+}
+
+.relatorios-tittle {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #000;
+    padding: 10px 0 0 0;
+}
+
+.relatorios-container {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 21px 0 0 0;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.emissao-box {
+    margin-top: 16px;
+    position: relative;
+    background: #F0F0F0;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.emissao-box-tittle {
+    margin: 0;
+    height: 30px;
+    background: #1E1F28;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #EEE;
+    border-radius: 8px 8px 0 0;
+    padding: 16px 0 2px 22px;
+}
+
+.emissao-dados {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    margin: 24px 174px 24px 22px;
+}
+
+.emissao-dado {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.emissao-tittle {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #010101;
+}
+
+.emissao-input {
+    height: 24px;
+    width: 90%;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    cursor: pointer;
+    /* font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #010101; */
+}
+
+.setor-sala-dados {
+    display: flex;
+    margin: 24px 174px 24px 22px;
+}
+
+.setor-sala-dado {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.relatorio-dropdown {
+    display: flex;
+}
+
+.setor-input-all {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.setor-input-icon {
+    padding-top: 3px;
+    padding-left: 7px;
+    /* position: absolute; */
+    /* left: 120px; */
+}
+
+.setor-salas {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    grid-template-columns: repeat(6,1fr);
+    margin-left:22px;
+    gap: 24px;
+}
+
+.sala-input {
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #010101;
+}
+
+.relatorio-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 16px;
+}
+
+.relatorio-cancelar {
+    width: 80px;
+    height: 28px;
+    /* margin-left: 300px;
+    margin-top: 22px; */
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 17px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.relatorio-gerar {
+    width: 80px;
+    height: 28px;
+    /* margin-left: 300px;
+    margin-top: 22px; */
+    background: rgb(28, 91, 193);
+    border: none;
+    outline: none;
+    border-radius: 17px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}

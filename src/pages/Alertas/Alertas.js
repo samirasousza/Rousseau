@@ -51,30 +51,30 @@ function Alertas() {
 
   // Funções do checkbox 
 
-  // const [checked, setChecked] = useState(false)
+  const [checked, setChecked] = useState(false)
 
-  // const toggleCheck = () => {
-  //   setChecked(!checked)
-  // }
+  const toggleCheck = () => {
+    setChecked(!checked)
+  }
 
-  // const checkedClass = checked ? 'checked' : '';
+  const checkedClass = checked ? 'checked' : '';
 
-  // const containerClass = 'checkbox'`checkbox ${checkedClass}`.trim()
+  const containerClass = 'checkbox'`checkbox ${checkedClass}`.trim()
 
-  // const optionsTemp = [
-  //   { id: 1, label: 'Acima', isChecked: false },
-  //   { id: 2, label: 'Abaixo', isChecked: false },
-  // ];
+  const optionsTemp = [
+    { id: 1, label: 'Acima', isChecked: false },
+    { id: 2, label: 'Abaixo', isChecked: false },
+  ];
 
-  // const [option, setOption] = useState([]);
+  const [option, setOption] = useState([]);
 
   
-  // const handleCheckboxChange = (optionId) => {
-  //   const updatedOptions = optionsTemp.map(option =>
-  //     option.id === optionId ? { ...option, isChecked: !option.isChecked } : option
-  //   );
-  //   setOption(updatedOptions);
-  // }
+  const handleCheckboxChange = (optionId) => {
+    const updatedOptions = optionsTemp.map(option =>
+      option.id === optionId ? { ...option, isChecked: !option.isChecked } : option
+    );
+    setOption(updatedOptions);
+  }
 
   // Funções do Modal
 
@@ -84,22 +84,23 @@ function Alertas() {
     <div className='page'>
       <Sidebar />
       <div className='alertas'>
-      <h1 className='alerta-path'>Alertas</h1>
-      <h1 className='alerta-tittle'>Alertas</h1>
+        <h1 className='alerta-path'>Alertas</h1>
+        <h1 className='alerta-tittle'>Alertas</h1>
+      </div>
 
       <div className='Container'>
         <div className='alerta-filtros'>
           <div className='filtro-info'>
             <label className='alerta-filtro-tittle'>Filtro</label>
-            {/* <div class="dropdown-filtro">
+            <div class="dropdown-filtro">
               <select className="dropdown-btn" id='filtro' value={filter} onChange={changeFilter}>
                 {filters.map(filter => (
                     <option value={filter.option} onChange={(event) => setFilter(event.target.value)} select>{filter.option}</option>
                 ))}
               </select>
-            </div> */}
+            </div> 
 
-            <button className='botao-filtro' onClick={() => setOpenModal(true)}>
+            {/* <button className='botao-filtro' onClick={() => setOpenModal(true)}>
               Filtrar
             </button>
 
@@ -135,8 +136,8 @@ function Alertas() {
 
                   {/* <div className={containerClass} onClick={toggleCheck} /> */}
 
-              </Modal>
-            </div>
+              {/* </Modal> */}
+             {/* </div> */}
 
           </div>
 
@@ -149,14 +150,11 @@ function Alertas() {
         <span className='data-atual'></span>
 
         <div className='alerta-cards'>
-          {alertas.map(alerta => (<AlertasCard alerta={alerta} key={alerta.ID_ALERTA} />))}
+          <AlertasCard nivel={props.nivel} id={props.id} nome={props.sala} temp={props.temp} umid={props.umid} data={props.data}  hora={props.hora} />
         </div>
-        
-      </div>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Alertas
+export default Alertas;
