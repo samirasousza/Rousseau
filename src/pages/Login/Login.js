@@ -43,33 +43,34 @@ export const Login = () => {
                         <div className='login-input-box'>
                             <div className='login-cad-box'>
                                 <p className='login-input-tittle'>Matrícula</p>
-                                <input type="text" classname="login-input-text" value={matricula} onChange={(e) => [setMatricula(e.target.value), setError("")]} required />
+                                <input type="text" className="login-input-text" value={matricula} onChange={(e) => [setMatricula(e.target.value), setError("")]} required />
                             </div>
 
                             <div className='login-cad-box'>
                                 <p className='login-input-tittle'>Senha</p>
-                                <input type="password" classname="login-input-text" value={senha} onChange={(e) => [setSenha(e.target.value), setError("")]}required />
+                                <input type="password" className="login-input-text" value={senha} onChange={(e) => [setSenha(e.target.value), setError("")]}required />
                                 <BsEyeFill className="login-icon" />
                             </div>
                         </div>
 
                         <div className="remember-forgot">
-                            <p><input type="checkbox" className='remember-text' />Mantenha-me conectado
+                            <p><input type="checkbox" className='remember-text' />Mantenha-me conectado</p>
                                 <Link to='/redefinir' className='forgot-text'>&nbsp;Esqueceu a senha?</Link>
-                            </p>
                         </div>
+
+                        <div className='login-error'>{error}</div>
 
                         <button type="submit" className='login-button' text="entrar" onClick={handleLogin}>Entrar</button>
 
-                        <div className='login-error'>{error}</div>
                     </form>
                 </div>
-            </div>
+                
+                <div className='login-register-link'>
+                    <p className='login-register-text'>Não tem uma conta?
+                        <Link to="/cadastro" className='login-register-text-link'>&nbsp;Criar conta</Link>
+                    </p>
+                </div>
 
-            <div className='login-register-link'>
-                <p className='login-register-text'>Não tem uma conta?
-                    <Link to="/cadastro" className='login-register-text-link'>&nbsp;Criar conta</Link>
-                </p>
             </div>
 
         </div>
